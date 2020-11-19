@@ -1,0 +1,45 @@
+html, body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 14%, rgba(0, 212, 255, 1) 75%);
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.ground {
+    position: fixed;
+    bottom: 0;
+}
+
+.castle {
+    max-width: 40%;
+    height: auto;
+    position: absolute;
+    bottom: 9rem;
+    right: 2rem;
+    z-index: 0;
+}
+
+.mario {
+    max-width: 5%;
+    height: auto;
+    position: absolute;
+    bottom: 9rem;
+    left: 0;
+    animation-name: walk;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+@keyframes walk {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(1400%)
+    }
+}
